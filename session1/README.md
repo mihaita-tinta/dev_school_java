@@ -3,6 +3,20 @@
 
 ## Java Basics
 
+### Before you start
+
+Things to know:
+* JRE: Java Runtime Environment is an implementation of the Java Virtual Machine where your Java programs run on
+* JDK: Besides of the JRE it contains also the Java Development Kit needed for developing java applications (java, javac ...)
+* Java SE: Java Standard Edition contains all Java libraries used in any Java program (java.lang, java.util, java.math, java.io, java.net ...)
+* Java EE: Java Enterprise Edition Java EE includes many components of the Java Standard Edition (Java SE).The Java EE platform consists of a set of services, APIs, and protocols that provide the functionality for developing multitiered, Web-based applications.
+* More info at: https://www.java.com/en/download/faq/techinfo.xml
+
+You need to install on your machine:
+* JDK 8 from: https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+* Git https://git-scm.com/download/win
+* Java IDE: download Intellij https://www.jetbrains.com/idea/download/#section=windows
+
 ### Syntax
 
 ```java
