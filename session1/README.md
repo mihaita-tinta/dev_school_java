@@ -20,7 +20,18 @@ You need to install on your machine:
 ### Syntax
 
 ```java
-public class HelloWorld {
+public class Car {
+
+	private int locuri;
+	
+	public void setLocuri(int locuri) {
+		this.locuri = locuri;
+	}
+	
+	public int getLocuri() {
+		return locuri;
+	}
+	
     public static void main(String []args) {
         System.out.println("Hello World");
     }
@@ -31,27 +42,32 @@ Features:
 * C like syntax
 * "everything is a class" (except primitive types)
 * *Object* is the root of the class hierarchy
-* classes have fields (state) and methods (behavior)
+* classes have fields (state)
+* classes have methods (behavior)
 * methods have a return type, parameters and a block of statements (code)
 * blocks of statements are enclosed in curly braces '{}'
-* *if*-*else*, *switch*, *while*, *do*-*while*, *for*
+* Identifiers are used to name classes, objects, methods and fields. They follow some naming conventions.
+* There are many legal identifiers specific to the language.
+* Flow control: *if*-*else*, *switch*, *while*, *do*-*while*, *for*
 * classes have constructors
 * *new* instantiates objects using the constructors
+* Classes and Interfaces are organized in packages and you can import them in your class
 * classes, fields and methods have access modifiers: *private*, *public*, *protected*, default
 * methods can be *abstract* (unimplemented)
 * fields and methods can belong to an instance (default), or can belong to the class as a whole (*static* keyword)
 * *this* keyword identifies the instance in the current context
+* Java code conventions only 20 pages: https://www.oracle.com/technetwork/java/codeconventions-150003.pdf
 
 ### OOP
 
 #### Inheritance 
 
 ```java
-public class DerivedClass extends BaseClass {
+public class Logan extends Car {
 }
 ```
 
-The DerivedClass inherits the implementation of BaseClass and has the possibility of modifying it.
+The Logan class inherits the implementation of Car and has the possibility of modifying it.
 
 **A class can only extend a single super class.**
 
@@ -312,7 +328,7 @@ mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -Darchetyp
 ### 2. The json parser
 
 We will be implementing a json parser which can transform Map objects and turn them to/from JSON strings. You have a 
-skeleton project with some TODOs and a couple of unit tests. Have alook around.
+skeleton project with some TODOs and a couple of unit tests. Have a look around.
 
 #### 2.1 Serialization
  
